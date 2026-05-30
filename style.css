@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100dvh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: gainsboro;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav {
+    height: 9dvh;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-left {
+    height: 100%;
+    width: 24%;
+    /* background-color: blanchedalmond; */
+}
+
+#logo {
+    height: 95%;
+    width: 30%;
+    /* background-color: aquamarine; */
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 8dvw;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+}
+
+#nav-right {
+    height: 100%;
+    width: 40%;
+    /* background-color: darkkhaki; */
+}
+
+#detail {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    gap: 25px;
+}
+
+#detail h1 {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#hero {
+    height: 90dvh;
+    position: relative;
+    background-color: gainsboro;
+    border: 1px solid transparent
+}
+
+#main {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 85dvh;
+    width: auto;
+}
+
+#left-hro {
+    width: 35%;
+    height: 80dvh;
+}
+
+#right-hro {
+    position: absolute;
+    right: 1%;
+    top: 0;
+    width: 32%;
+    height: 84dvh;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#img1 {
+    height: 30%;
+    width: auto;
+}
+
+#img2 {
+    margin-top: -6%;
+    margin-left: 10%;
+    height: 41%;
+    width: auto;
+}
+
+#img3 {
+    margin-top: -7%;
+    height: 38%;
+    width: auto;
+}
+
+#img4 {
+    margin-top: -55%;
+    margin-left: 45%;
+    height: 40%;
+    width: auto;
+}
+
+#img5 {
+    margin-top: -6%;
+    height: 37%;
+    width: auto;
+}
+
+#img6 {
+    margin-top: -13%;
+    margin-right: -20%;
+    height: 43%;
+    width: auto;
+}
+
+
+#left-hro h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200px;
+    line-height: 16dvh;
+    color: white;
+    margin-top: 45px;
+}
+
+#info {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    height: 55dvh;
+    width: 44dvh;
+    /* background-color: beige; */
+}
+
+#head {
+    height: 45%;
+    white-space: 100%;
+    /* background-color: darksalmon; */
+}
+
+#head h1 {
+    font-size: 65px;
+    line-height: 65px;
+    color: rgb(3, 30, 3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#para {
+    height: 30%;
+    width: 98%;
+    /* background-color: blanchedalmond; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-left: 5px;
+    margin-top: 13px;
+}
+
+#btn {
+    height: 5dvh;
+    width: 17dvh;
+    font-size: 15px;
+    background-color: aliceblue;
+    color: rgb(61, 64, 64);
+    border: 3px solid gray;
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-left: 20%;
+}
+
+#page2 {
+    position: relative;
+    height: 100dvh;
+    width: screen;
+    background-color: rgb(211, 207, 207);
+}
+
+#pg2-img {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    height: 85dvh;
+    width: 30dvw;
+}
+
+#pg2-head {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: darkgray;
+    line-height: 65px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pg2-para {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    line-height: 20px;
+}
+
+#pg2-btn {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    height: 15dvh;
+    width: 8dvw;
+    border: 4px solid gray;
+    border-radius: 100%;
+    background-color: rgb(233, 228, 223);
+    box-shadow: 0 0 15px rgba(127, 119, 221, 0.6);
+}
+
+#pg2-btn i {
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+#page3 {
+    position: relative;
+    height: 100dvh;
+    width: screen;
+    background-color: gainsboro;
+}
+
+#page3 h1 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 92px;
+}
+
+#pg3-para {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    line-height: 28px;
+}
+
+#pg3-btn {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    height: 8dvh;
+    width: 10dvw;
+    border: 4px solid gray;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(98, 97, 105, 0.6);
+    color: black;
+    font-size: large;
+
+}
+
+#pg3-img {
+    position: absolute;
+    top: -15%;
+    right: -8%;
+    height: 100dvh;
+    width: auto;
+    rotate: -10deg;
+}
