@@ -6,7 +6,7 @@
 
 html,
 body {
-    height: 100dvh;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     background-color: gainsboro;
@@ -114,7 +114,7 @@ body {
 }
 
 #img4 {
-    margin-top: -55%;
+    margin-top: -52%;
     margin-left: 45%;
     height: 40%;
     width: auto;
@@ -184,6 +184,181 @@ body {
     border-radius: 50px;
     margin-top: 15px;
     margin-left: 20%;
+}
+
+@media (max-width: 600px) {
+    #nav {
+        height: 6dvh;
+        width: 100%;
+        background-color: gainsboro;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav-left {
+        height: 100%;
+        width: 15%;
+        /* background-color: blanchedalmond; */
+    }
+
+    #logo {
+        height: 100%;
+        width: 100%;
+        /* background-color: aquamarine; */
+        align-self: center;
+        margin-top: 4px;
+        margin-left: 5dvw;
+    }
+
+    #logo img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #nav-right {
+        height: 100%;
+        width: 70%;
+        /* background-color: darkkhaki; */
+    }
+
+    #detail {
+        display: flex;
+        height: 80%;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #detail h1 {
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    #hero {
+        height: 180dvh;
+        position: relative;
+        background-color: gainsboro;
+        border: 1px solid transparent
+    }
+
+    #main {
+        position: absolute;
+        top: 2%;
+        transform: translate(-7%);
+        height: 70dvh;
+        width: auto;
+    }
+
+    #left-hro {
+        width: auto;
+        height: 50dvh;
+    }
+
+    #right-hro {
+        position: absolute;
+        right: -2%;
+        top: 55%;
+        width: 100%;
+        height: 70dvh;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #img1 {
+        height: 30%;
+        width: auto;
+    }
+
+    #img2 {
+        margin-top: -6%;
+        margin-left: 10%;
+        height: 41%;
+        width: auto;
+    }
+
+    #img3 {
+        margin-top: -7%;
+        height: 38%;
+        width: auto;
+    }
+
+    #img4 {
+        margin-top: -52%;
+        margin-left: 45%;
+        height: 40%;
+        width: auto;
+    }
+
+    #img5 {
+        margin-top: -6%;
+        height: 37%;
+        width: auto;
+    }
+
+    #img6 {
+        margin-top: -13%;
+        margin-right: -20%;
+        height: 43%;
+        width: auto;
+    }
+
+
+    #left-hro h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 150px;
+        line-height: 10dvh;
+        color: white;
+        margin-top: 45px;
+    }
+
+    #info {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        height: 30dvh;
+        width: 85dvw;
+        /* background-color: beige; */
+    }
+
+    #head {
+        display: none;
+        height: 45%;
+        white-space: 100%;
+        /* background-color: darksalmon; */
+    }
+
+    #head h1 {
+        font-size: 65px;
+        line-height: 65px;
+        color: rgb(3, 30, 3);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #para {
+        height: 50%;
+        width: 98%;
+        /* background-color: blanchedalmond; */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        margin-left: 5px;
+        margin-top: 13px;
+    }
+
+    #btn {
+        height: 5dvh;
+        width: 17dvh;
+        font-size: 15px;
+        background-color: aliceblue;
+        color: rgb(61, 64, 64);
+        border: 3px solid gray;
+        border-radius: 50px;
+        margin-top: 2px;
+        margin-left: 20%;
+    }
 }
 
 #page2 {
@@ -281,3 +456,5 @@ body {
     width: auto;
     rotate: -10deg;
 }
+
+@media (max-width: 600px) {}
