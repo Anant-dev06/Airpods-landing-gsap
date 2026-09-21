@@ -73,7 +73,7 @@ body {
 #main {
     position: absolute;
     top: 5%;
-    left: -2%;
+    transform: translateX(-12%);
     height: 85dvh;
     width: auto;
 }
@@ -86,9 +86,9 @@ body {
 #right-hro {
     position: absolute;
     right: 1%;
-    top: 0;
-    width: 35%;
-    height: 84dvh;
+    top: 5%;
+    width: 30%;
+    height: 75dvh;
     /* background-color: aquamarine; */
     display: flex;
     flex-wrap: wrap;
@@ -114,26 +114,94 @@ body {
 }
 
 #img4 {
-    margin-top: -52%;
+    margin-top: -54%;
     margin-left: 45%;
-    height: 40%;
+    height: 42%;
     width: auto;
 }
 
 #img5 {
     margin-top: -6%;
-    height: 37%;
+    height: 39%;
     width: auto;
 }
 
 #img6 {
     margin-top: -13%;
     margin-right: -20%;
-    height: 43%;
+    height: 45%;
     width: auto;
 }
 
 
+
+/* After hover change image */
+.m-img {
+    display: none;
+    position: absolute;
+    top: 5%;
+    transform: translateX(-12%);
+    height: 85dvh;
+    width: auto;
+}
+
+#image1 {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    transform: translateX(-12%);
+    height: 70dvh;
+    width: auto;
+}
+
+#image2 {
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    transform: translateX(-12%);
+    height: 68dvh;
+    width: auto;
+}
+
+#image3 {
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    transform: translateX(-12%);
+    height: 68dvh;
+    width: auto;
+}
+
+#image4 {
+    position: absolute;
+    top: 14%;
+    left: 4%;
+    transform: translateX(-12%);
+    height: 72dvh;
+    width: auto;
+}
+
+#image5 {
+    position: absolute;
+    top: 14%;
+    left: 5%;
+    transform: translateX(-12%);
+    height: 68dvh;
+    width: auto;
+}
+
+#image6 {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    transform: translateX(-12%);
+    height: 80dvh;
+    width: auto;
+}
+
+
+
+/* Left hero */
 #left-hro h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 200px;
@@ -188,7 +256,7 @@ body {
 
 @media (max-width: 600px) {
     #nav {
-        height: 6dvh;
+        height: 6svh;
         width: 100%;
         background-color: gainsboro;
         display: flex;
@@ -238,7 +306,7 @@ body {
     }
 
     #hero {
-        height: 180dvh;
+        height: 180svh;
         position: relative;
         background-color: gainsboro;
         border: 1px solid transparent
@@ -246,24 +314,24 @@ body {
 
     #main {
         position: absolute;
-        top: 2%;
-        transform: translate(-10%);
+        top: 1%;
+        left: 2%;
         display: flex;
-        height: 65dvh;
+        height: 65svh;
         width: auto;
     }
 
     #left-hro {
         width: auto;
-        height: 50dvh;
+        height: 50svh;
     }
 
     #right-hro {
         position: absolute;
-        right: 1%;
+        left: 1%;
         top: 52%;
         width: 100%;
-        height: 68dvh;
+        height: 68svh;
         /* background-color: aquamarine; */
         display: flex;
         flex-wrap: wrap;
@@ -271,8 +339,8 @@ body {
     }
 
     #img1 {
-        height: 30%;
-        width: auto;
+        height: 32%;
+        width: 45%;
     }
 
     #img2 {
