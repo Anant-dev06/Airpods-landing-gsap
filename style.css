@@ -128,7 +128,8 @@ body {
 
 #img6 {
     margin-top: -13%;
-    margin-right: -20%;
+    /* margin-right: -70%; */
+    margin-left: -6%;
     height: 45%;
     width: auto;
 }
