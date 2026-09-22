@@ -66,7 +66,7 @@ body {
 #hero {
     height: 90dvh;
     position: relative;
-    background-color: gainsboro;
+    background-color: rgb(227, 224, 224);
     border: 1px solid transparent
 }
 
@@ -78,6 +78,7 @@ body {
     width: auto;
 }
 
+
 #left-hro {
     width: 35%;
     height: 80dvh;
@@ -87,13 +88,18 @@ body {
     position: absolute;
     right: 1%;
     top: 5%;
-    width: 30%;
+    width: 32%;
     height: 75dvh;
     /* background-color: aquamarine; */
     display: flex;
     flex-wrap: wrap;
 
 }
+
+.imgr:hover {
+    transform: scale(1.05);
+}
+
 
 #img1 {
     height: 30%;
@@ -109,14 +115,14 @@ body {
 
 #img3 {
     margin-top: -7%;
-    height: 38%;
+    height: 36%;
     width: auto;
 }
 
 #img4 {
-    margin-top: -54%;
+    margin-top: -49%;
     margin-left: 45%;
-    height: 42%;
+    height: 40%;
     width: auto;
 }
 
@@ -145,6 +151,7 @@ body {
     height: 85dvh;
     width: auto;
 }
+
 
 #image1 {
     position: absolute;

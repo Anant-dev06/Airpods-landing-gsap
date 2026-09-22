@@ -68,3 +68,105 @@
 // }
 
 
+//hover change effect
+let mimage = document.querySelector("#main");
+let all_image = document.querySelectorAll(".m-img")
+let image1 = document.querySelector("#image1");
+let image2 = document.querySelector("#image2");
+let image3 = document.querySelector("#image3");
+let image4 = document.querySelector("#image4");
+let image5 = document.querySelector("#image5");
+let image6 = document.querySelector("#image6");
+
+let img1 = document.querySelector("#img1");
+let img2 = document.querySelector("#img2");
+let img3 = document.querySelector("#img3");
+let img4 = document.querySelector("#img4");
+let img5 = document.querySelector("#img5");
+let img6 = document.querySelector("#img6");
+
+// Image-1 effect
+img1.addEventListener("mouseover", () => {
+    mimage.style.display = "none";
+    image1.style.display = "block";
+    all_image.style.display = "none";
+    image1.style.transition = "ease 1s";
+});
+img1.addEventListener("mouseleave", () => {
+    mimage.style.display = "block";
+    image1.style.display = "none";
+    all_image.style.display = "none";
+    image1.style.transition = "ease 1s";
+});
+
+// Image-2 effect
+img2.addEventListener("mouseover", () => {
+    mimage.style.display = "none";
+    image2.style.display = "block";
+    all_image.style.display = "none";
+    image2.style.transition = "ease 1s";
+});
+img2.addEventListener("mouseleave", () => {
+    mimage.style.display = "block";
+    image2.style.display = "none";
+    all_image.style.display = "none";
+    image2.style.transition = "ease 1s";
+});
+
+
+img3.addEventListener("mouseover", () => {
+    mimage.style.display = "block";
+    image3.style.display = "none";
+    all_image.style.display = "none";
+    image3.style.transition = "ease 1s";
+});
+img3.addEventListener("mouseleave", () => {
+    mimage.style.display = "block";
+    image3.style.display = "none";
+    all_image.style.display = "none";
+    image3.style.transition = "ease 1s";
+});
+
+
+img4.addEventListener("mouseover", () => {
+    mimage.style.display = "none";
+    image4.style.display = "block";
+    all_image.style.display = "none";
+    image4.style.transition = "ease 1s";
+});
+img4.addEventListener("mouseleave", () => {
+    mimage.style.display = "block";
+    image4.style.display = "none";
+    all_image.style.display = "none";
+    image4.style.transition = "ease 1s";
+});
+
+
+img5.addEventListener("mouseover", () => {
+    mimage.style.display = "none";
+    image5.style.display = "block";
+    all_image.style.display = "none";
+    image5.style.transition = "ease 1s";
+});
+img5.addEventListener("mouseleave", () => {
+    mimage.style.display = "block";
+    image5.style.display = "none";
+    all_image.style.display = "none";
+    image5.style.transition = "ease 1s";
+});
+
+
+img6.addEventListener("mouseover", () => {
+    mimage.style.display = "none";
+    image6.style.display = "block";
+    all_image.style.display = "none";
+    image6.style.transition = "ease 1s";
+});
+img6.addEventListener("mouseleave", () => {
+    mimage.style.display = "block";
+    image6.style.display = "none";
+    all_image.style.display = "none";
+    image6.style.transition = "ease 1s";
+});
+
+
