@@ -128,6 +128,7 @@ body {
 
 #img5 {
     margin-top: -6%;
+    margin-left: -1%;
     height: 39%;
     width: auto;
 }
@@ -135,8 +136,8 @@ body {
 #img6 {
     margin-top: -13%;
     /* margin-right: -70%; */
-    margin-left: -6%;
-    height: 45%;
+    margin-left: -2%;
+    height: 46%;
     width: auto;
 }
 
@@ -437,6 +438,114 @@ body {
         margin-top: 2px;
         margin-left: 20%;
     }
+}
+
+#page1 {
+    position: relative;
+    height: 100dvh;
+    width: screen;
+    background-color: rgb(217, 216, 216);
+}
+
+#pg1-left {
+    position: absolute;
+    top: 3%;
+    left: -1%;
+    height: 95%;
+    width: 48%;
+    background-color: rgba(207, 237, 237, 0.412);
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#p1-left-head {
+    display: flex;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-left: 25px;
+    padding-top: 15px;
+    color: ivory;
+}
+
+#pg1-video {
+    position: absolute;
+    left: 2%;
+    top: 7%;
+    height: 90%;
+    width: 55%;
+    background-color: darkolivegreen;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#pg1-vd {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#f-box {
+    position: absolute;
+    right: 1%;
+    top: 7%;
+    height: 90%;
+    width: 41%;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.f-class {
+    height: 25%;
+    width: 100%;
+    /* background-color: rgba(249, 249, 250, 0.332);
+    backdrop-filter: blur(8px);
+    border: 2px solid white; */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 40px;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-icon {
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.f-icon i {
+    font-size: 65px;
+}
+
+.f-txt {
+    height: 50%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-txt p {
+    font-size: xx-large;
+    text-align: center;
 }
 
 #page2 {
