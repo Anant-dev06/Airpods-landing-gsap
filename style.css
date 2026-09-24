@@ -11,7 +11,7 @@ body {
     box-sizing: border-box;
     background-color: gainsboro;
     overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #nav {
@@ -447,16 +447,26 @@ body {
     background-color: rgb(217, 216, 216);
 }
 
+#ap-logo {
+    height: 80dvh;
+    width: auto;
+    position: absolute;
+    left: -1%;
+    top: 10%;
+    opacity: 6%;
+}
+
 #pg1-left {
     position: absolute;
-    top: 3%;
+    top: 2%;
     left: -1%;
     height: 95%;
     width: 48%;
-    background-color: rgba(207, 237, 237, 0.412);
+    background-color: rgba(50, 52, 52, 0.525);
     backdrop-filter: blur(10px);
     border: 2px solid white;
     border-radius: 10px;
+    z-index: 5;
 }
 
 #p1-left-head {
@@ -475,7 +485,6 @@ body {
     top: 7%;
     height: 90%;
     width: 55%;
-    background-color: darkolivegreen;
     border: 2px solid white;
     border-radius: 10px;
     overflow: hidden;
@@ -503,11 +512,8 @@ body {
 .f-class {
     height: 25%;
     width: 100%;
-    /* background-color: rgba(249, 249, 250, 0.332);
-    backdrop-filter: blur(8px);
-    border: 2px solid white; */
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background: rgba(88, 85, 85, 0.349);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(15px);
 
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -518,6 +524,7 @@ body {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
+    color: azure;
 }
 
 .f-icon {
@@ -528,6 +535,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: rgb(141, 192, 236);
 }
 
 .f-icon i {
@@ -546,6 +554,144 @@ body {
 .f-txt p {
     font-size: xx-large;
     text-align: center;
+}
+
+#hanging-pod {
+    height: 65dvh;
+    width: auto;
+    position: absolute;
+    top: -2%;
+    right: 25%;
+    z-index: 55;
+}
+
+#pg1-right-box {
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    height: 40dvh;
+    width: 50%;
+    background-color: rgb(37, 37, 37);
+    /* border: 2px solid pink;
+    border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+#pgr-txt {
+    height: 100%;
+    width: 70%;
+    background-color: transparent;
+    position: absolute;
+    right: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+}
+
+#pgr-h1 {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+#pgr-h2 {
+    padding-left: 12px;
+    padding-top: 10px;
+    font-size: x-large;
+}
+
+#pgr-p {
+    padding-top: 15px;
+    padding: 15px;
+    font-size: large;
+    text-align: left;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#pg1-buy {
+    height: 36dvh;
+    width: 20dvw;
+    background-color: rgb(37, 37, 37);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+    position: absolute;
+    bottom: 3%;
+    right: 31%;
+    overflow: hidden;
+}
+
+#buy-over {
+    height: 35%;
+    width: 85%;
+    position: absolute;
+    bottom: 2%;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: aliceblue;
+}
+
+#buy-over h3 {
+    padding: 10px;
+    font-size: 30px;
+    padding-bottom: -10px;
+}
+
+#buy-over p {
+    text-align: center;
+    padding-top: -20px;
+    padding: 0;
+    font-size: small;
+    font-weight: 600;
+}
+
+#pg1-buy img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+#pg1-view {
+    height: 44dvh;
+    width: 28dvw;
+    background-color: rgb(37, 37, 37);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+    overflow: hidden;
+}
+
+#view-over {
+    height: 10%;
+    width: 85%;
+    position: absolute;
+    bottom: 2%;
+    left: 7%;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: aliceblue;
+}
+
+#view-over h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#pg1-view img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 #page2 {
