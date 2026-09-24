@@ -29,33 +29,19 @@ if (window.innerWidth > 768) {
         stagger: 0.8
     })
 
-    gsap.from("#pg2-img", {
-        x: -100,
-        duration: 1.2,
-        opacity: 0,
-        scrollTrigger: "#pg2-img"
-    })
-
-    gsap.from("#pg2-head", {
-        x: 200,
-        duration: 1.8,
-        opacity: 0,
-        scrollTrigger: "#pg2-head"
-    })
-
-    gsap.from("#pg2-para", {
-        x: 200,
-        duration: 1.8,
-        opacity: 0,
-        scrollTrigger: "#pg2-para"
-    })
-
-    gsap.from("#pg2-btn", {
-        x: -200,
-        duration: 0.8,
+    gsap.from("#pg1-left", {
+        x: -900,
         delay: 1,
-        opacity: 0,
-        scrollTrigger: "#pg2-btn"
+        duration: 1.8,
+        scrollTrigger: "#pg1-left"
+    })
+
+    gsap.from(".f-class", {
+        x: -500,
+        duration: 0.8,
+        delay: 2,
+        stagger: 1,
+        scrollTrigger: ".f-class"
     })
 
     gsap.from("#pg3-img", {
@@ -63,8 +49,16 @@ if (window.innerWidth > 768) {
         delay: 1,
         duration: 1,
         opacity: 0,
-        scrollTrigger: "#pg3-img"
+        scrollTrigger: "#pg3-btn"
     })
+
+    gsap.from(".spec-table", {
+        x: 1000,
+        duration: 1,
+        scrollTrigger: ".spec-table",
+        delay: 0.8
+    })
+
 }
 
 
