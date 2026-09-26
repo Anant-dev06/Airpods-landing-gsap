@@ -6,13 +6,13 @@ if (window.innerWidth > 768) {
         opacity: 0
     })
 
-    gsap.from("#nav h1", {
-        y: -100,
-        delay: 1.5,
-        duration: 0.8,
-        opacity: 0,
-        stagger: 0.9
-    })
+    // gsap.from("#nav h1", {
+    //     y: -100,
+    //     delay: 1.5,
+    //     duration: 0.8,
+    //     opacity: 0,
+    //     stagger: 0.9
+    // })
 
     gsap.from("#m1 img", {
         y: 150,
@@ -23,16 +23,16 @@ if (window.innerWidth > 768) {
 
     gsap.from("#right-hro img", {
         x: 100,
-        delay: 5,
+        delay: 2,
         duration: 0.8,
         opacity: 0,
-        stagger: 0.8
+        stagger: 0.5
     })
 
     gsap.from("#pg1-left", {
         x: -900,
-        delay: 1,
-        duration: 1.8,
+        delay: 0.8,
+        duration: 1,
         scrollTrigger: "#pg1-left"
     })
 
@@ -79,88 +79,91 @@ let img4 = document.querySelector("#img4");
 let img5 = document.querySelector("#img5");
 let img6 = document.querySelector("#img6");
 
-// Image-1 effect
-img1.addEventListener("mouseover", () => {
-    mimage.style.display = "none";
-    image1.style.display = "block";
-    all_image.style.display = "none";
-    image1.style.transition = "ease 1s";
-});
-img1.addEventListener("mouseleave", () => {
-    mimage.style.display = "block";
-    image1.style.display = "none";
-    all_image.style.display = "none";
-    image1.style.transition = "ease 1s";
-});
+if (window.innerWidth > 750) {
 
-// Image-2 effect
-img2.addEventListener("mouseover", () => {
-    mimage.style.display = "none";
-    image2.style.display = "block";
-    all_image.style.display = "none";
-    image2.style.transition = "ease 1s";
-});
-img2.addEventListener("mouseleave", () => {
-    mimage.style.display = "block";
-    image2.style.display = "none";
-    all_image.style.display = "none";
-    image2.style.transition = "ease 1s";
-});
+    // Image-1 effect
+    img1.addEventListener("mouseover", () => {
+        mimage.style.display = "none";
+        image1.style.display = "block";
+        all_image.style.display = "none";
+        image1.style.transition = "ease 1s";
+    });
+    img1.addEventListener("mouseleave", () => {
+        mimage.style.display = "block";
+        image1.style.display = "none";
+        all_image.style.display = "none";
+        image1.style.transition = "ease 1s";
+    });
 
-
-img3.addEventListener("mouseover", () => {
-    mimage.style.display = "block";
-    image3.style.display = "none";
-    all_image.style.display = "none";
-    image3.style.transition = "ease 1s";
-});
-img3.addEventListener("mouseleave", () => {
-    mimage.style.display = "block";
-    image3.style.display = "none";
-    all_image.style.display = "none";
-    image3.style.transition = "ease 1s";
-});
+    // Image-2 effect
+    img2.addEventListener("mouseover", () => {
+        mimage.style.display = "none";
+        image2.style.display = "block";
+        all_image.style.display = "none";
+        image2.style.transition = "ease 1s";
+    });
+    img2.addEventListener("mouseleave", () => {
+        mimage.style.display = "block";
+        image2.style.display = "none";
+        all_image.style.display = "none";
+        image2.style.transition = "ease 1s";
+    });
 
 
-img4.addEventListener("mouseover", () => {
-    mimage.style.display = "none";
-    image4.style.display = "block";
-    all_image.style.display = "none";
-    image4.style.transition = "ease 1s";
-});
-img4.addEventListener("mouseleave", () => {
-    mimage.style.display = "block";
-    image4.style.display = "none";
-    all_image.style.display = "none";
-    image4.style.transition = "ease 1s";
-});
+    img3.addEventListener("mouseover", () => {
+        mimage.style.display = "block";
+        image3.style.display = "none";
+        all_image.style.display = "none";
+        image3.style.transition = "ease 1s";
+    });
+    img3.addEventListener("mouseleave", () => {
+        mimage.style.display = "block";
+        image3.style.display = "none";
+        all_image.style.display = "none";
+        image3.style.transition = "ease 1s";
+    });
 
 
-img5.addEventListener("mouseover", () => {
-    mimage.style.display = "none";
-    image5.style.display = "block";
-    all_image.style.display = "none";
-    image5.style.transition = "ease 1s";
-});
-img5.addEventListener("mouseleave", () => {
-    mimage.style.display = "block";
-    image5.style.display = "none";
-    all_image.style.display = "none";
-    image5.style.transition = "ease 1s";
-});
+    img4.addEventListener("mouseover", () => {
+        mimage.style.display = "none";
+        image4.style.display = "block";
+        all_image.style.display = "none";
+        image4.style.transition = "ease 1s";
+    });
+    img4.addEventListener("mouseleave", () => {
+        mimage.style.display = "block";
+        image4.style.display = "none";
+        all_image.style.display = "none";
+        image4.style.transition = "ease 1s";
+    });
 
 
-img6.addEventListener("mouseover", () => {
-    mimage.style.display = "none";
-    image6.style.display = "block";
-    all_image.style.display = "none";
-    image6.style.transition = "ease 1s";
-});
-img6.addEventListener("mouseleave", () => {
-    mimage.style.display = "block";
-    image6.style.display = "none";
-    all_image.style.display = "none";
-    image6.style.transition = "ease 1s";
-});
+    img5.addEventListener("mouseover", () => {
+        mimage.style.display = "none";
+        image5.style.display = "block";
+        all_image.style.display = "none";
+        image5.style.transition = "ease 1s";
+    });
+    img5.addEventListener("mouseleave", () => {
+        mimage.style.display = "block";
+        image5.style.display = "none";
+        all_image.style.display = "none";
+        image5.style.transition = "ease 1s";
+    });
 
 
+    img6.addEventListener("mouseover", () => {
+        mimage.style.display = "none";
+        image6.style.display = "block";
+        all_image.style.display = "none";
+        image6.style.transition = "ease 1s";
+    });
+    img6.addEventListener("mouseleave", () => {
+        mimage.style.display = "block";
+        image6.style.display = "none";
+        all_image.style.display = "none";
+        image6.style.transition = "ease 1s";
+    });
+
+
+}
