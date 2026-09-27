@@ -167,3 +167,40 @@ if (window.innerWidth > 750) {
 
 
 }
+const menuopen = document.querySelector("#menu-open");
+const menuclose = document.querySelector("#menu-close");
+const menubox = document.querySelector("#menu");
+
+menuopen.addEventListener("click", () => {
+
+    menuopen.style.display = "none";
+    menuclose.style.display = "block";
+    menubox.style.display = "block";
+
+    gsap.fromTo(menubox,
+        {
+            y: -300,
+        },
+        {
+            y: 0,
+            duration: 0.8,
+            ease: "power3.out"
+        }
+    );
+});
+menuclose.addEventListener("click", () => {
+
+    menuopen.style.display = "block";
+    menuclose.style.display = "none";
+
+    gsap.to(menubox, {
+        y: -300,
+        duration: 0.8,
+        ease: "power3.inOut",
+
+        onComplete: () => {
+            menubox.style.display = "none";
+        }
+    });
+});
+
