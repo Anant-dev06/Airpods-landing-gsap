@@ -1,18 +1,10 @@
-if (window.innerWidth > 768) {
+if (window.innerWidth > 1024) {
     gsap.from("#nav", {
         y: -100,
         delay: 0.8,
         duration: 1.4,
         opacity: 0
     })
-
-    // gsap.from("#nav h1", {
-    //     y: -100,
-    //     delay: 1.5,
-    //     duration: 0.8,
-    //     opacity: 0,
-    //     stagger: 0.9
-    // })
 
     gsap.from("#m1 img", {
         y: 150,
@@ -31,16 +23,16 @@ if (window.innerWidth > 768) {
 
     gsap.from("#pg1-left", {
         x: -900,
-        delay: 0.8,
+        delay: 0.3,
         duration: 1,
         scrollTrigger: "#pg1-left"
     })
 
     gsap.from(".f-class", {
         x: -500,
-        duration: 0.8,
+        duration: 0.2,
         delay: 2,
-        stagger: 1,
+        stagger: 0.6,
         scrollTrigger: ".f-class"
     })
 
@@ -79,7 +71,7 @@ let img4 = document.querySelector("#img4");
 let img5 = document.querySelector("#img5");
 let img6 = document.querySelector("#img6");
 
-if (window.innerWidth > 750) {
+if (window.innerWidth > 1024) {
 
     // Image-1 effect
     img1.addEventListener("mouseover", () => {
@@ -167,9 +159,12 @@ if (window.innerWidth > 750) {
 
 
 }
+
+
 const menuopen = document.querySelector("#menu-open");
 const menuclose = document.querySelector("#menu-close");
 const menubox = document.querySelector("#menu");
+const menuOptions = document.querySelectorAll(".menugo");
 
 menuopen.addEventListener("click", () => {
 
@@ -177,7 +172,8 @@ menuopen.addEventListener("click", () => {
     menuclose.style.display = "block";
     menubox.style.display = "block";
 
-    gsap.fromTo(menubox,
+    gsap.fromTo(
+        menubox,
         {
             y: -300,
         },
@@ -187,20 +183,35 @@ menuopen.addEventListener("click", () => {
             ease: "power3.out"
         }
     );
+
 });
-menuclose.addEventListener("click", () => {
+
+function closeMenu() {
 
     menuopen.style.display = "block";
     menuclose.style.display = "none";
 
     gsap.to(menubox, {
         y: -300,
-        duration: 0.8,
+        duration: 0.5,
         ease: "power3.inOut",
 
         onComplete: () => {
             menubox.style.display = "none";
         }
     });
+
+}
+
+menuclose.addEventListener("click", () => {
+    closeMenu();
 });
 
+
+menuOptions.forEach((option) => {
+
+    option.addEventListener("click", () => {
+        closeMenu();
+    });
+
+});
