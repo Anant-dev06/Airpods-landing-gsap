@@ -23,7 +23,7 @@ if (window.innerWidth > 1024) {
 
     gsap.from("#pg1-left", {
         x: -900,
-        delay: 0.3,
+        delay: 0,
         duration: 1,
         scrollTrigger: "#pg1-left"
     })
@@ -31,7 +31,7 @@ if (window.innerWidth > 1024) {
     gsap.from(".f-class", {
         x: -500,
         duration: 0.2,
-        delay: 2,
+        delay: 1,
         stagger: 0.6,
         scrollTrigger: ".f-class"
     })
