@@ -23,7 +23,7 @@ if (window.innerWidth > 1024) {
 
     gsap.from("#pg1-left", {
         x: -900,
-        delay: 0,
+        delay: 0.8,
         duration: 1,
         scrollTrigger: "#pg1-left"
     })
@@ -49,6 +49,49 @@ if (window.innerWidth > 1024) {
         duration: 1,
         scrollTrigger: ".spec-table",
         delay: 0.8
+    })
+
+    gsap.from("#pg3-over", {
+        x: -700,
+        duration: 0.8,
+        delay: 0.9,
+        scrollTrigger: "#pg3-over"
+    })
+
+    gsap.from("#vd-left", {
+        y: 600,
+        duration: 0.8,
+        delay: 1,
+        scrollTrigger: "#page3"
+    })
+
+    gsap.from("#vd-r1", {
+        x: 1200,
+        delay: 0.8,
+        duration: 0.8,
+        scrollTrigger: "#vd-r1"
+    })
+
+    gsap.from("#vd-r2 ", {
+        x: 1400,
+        delay: 1,
+        duration: 1,
+        scrollTrigger: "#vd-r2"
+    })
+
+    gsap.from("#quick", {
+        x: -900,
+        duration: 0.8,
+        delay: 0.4,
+        scrollTrigger: "#quick"
+    })
+
+    gsap.from("#f-right", {
+        x: 1200,
+        delay: 1.2,
+        duration: 0.8,
+        scrollTrigger: "#f-right",
+        stagger: 0.8
     })
 
 }
